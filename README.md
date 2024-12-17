@@ -154,7 +154,9 @@ Telegram：[@lgc2333](https://t.me/lgc2333)
 
 ## 💡 鸣谢
 
-如果有要鸣谢的人的话
+### [HibiKier/zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)
+
+- 模板样式来源，真寻酱可爱！
 
 ## 💰 赞助
 
