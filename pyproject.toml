@@ -14,7 +14,7 @@ readme = "README.md"
 license = { text = "MIT" }
 
 [project.urls]
-homepage = "https://github.com/owner/nonebot-plugin-picstatus-template-zhenxun"
+homepage = "https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus-template-zhenxun"
 
 [dependency-groups]
 dev = []

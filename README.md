@@ -28,7 +28,7 @@ _✨ 一个衍生自绪山真寻 Bot 的 PicStatus 状态模板 ✨_
   <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/lgc-NB2Dev/readme/main/template/pyd-v1-or-v2.json" alt="Pydantic Version 1 Or 2" >
 </a>
 <a href="./LICENSE">
-  <img src="https://img.shields.io/github/license/owner/nonebot-plugin-picstatus-template-zhenxun.svg" alt="license">
+  <img src="https://img.shields.io/github/license/lgc-NB2Dev/nonebot-plugin-picstatus-template-zhenxun.svg" alt="license">
 </a>
 <a href="https://pypi.python.org/pypi/nonebot-plugin-picstatus-template-zhenxun">
   <img src="https://img.shields.io/pypi/v/nonebot-plugin-picstatus-template-zhenxun.svg" alt="pypi">

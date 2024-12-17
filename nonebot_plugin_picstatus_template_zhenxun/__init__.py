@@ -14,7 +14,7 @@ __plugin_meta__ = PluginMetadata(
     description="一个衍生自绪山真寻 Bot 的 PicStatus 状态模板",
     usage="一个衍生自绪山真寻 Bot 的 PicStatus 状态模板",
     type="application",
-    homepage="https://github.com/owner/nonebot-plugin-picstatus-template-zhenxun",
+    homepage="https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus-template-zhenxun",
     config=ConfigModel,
     supported_adapters=inherit_supported_adapters(
         "nonebot_plugin_picstatus",
