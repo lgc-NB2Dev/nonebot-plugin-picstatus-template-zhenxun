@@ -1,15 +1,20 @@
 [project]
-name = "nonebot-plugin-example"
+name = "nonebot-plugin-picstatus-template-zhenxun"
 dynamic = ["version"]
 description = "Template plugin project"
 authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
-dependencies = ["nonebot2>=2.3.1", "nonebot-plugin-alconna>=0.48.0"]
+dependencies = [
+    "nonebot2>=2.4.0",
+    "cookit[jinja,playwright,pydantic]>=0.8.4",
+    "nonebot-plugin-picstatus>=2.1.3.post1",
+    "nonebot-plugin-htmlrender>=0.5.0"
+]
 requires-python = ">=3.9,<4.0"
 readme = "README.md"
 license = { text = "MIT" }
 
 [project.urls]
-homepage = "https://github.com/owner/nonebot-plugin-example"
+homepage = "https://github.com/owner/nonebot-plugin-picstatus-template-zhenxun"
 
 [dependency-groups]
 dev = []
@@ -23,4 +28,4 @@ includes = []
 
 [tool.pdm.version]
 source = "file"
-path = "nonebot_plugin_example/__init__.py"
+path = "nonebot_plugin_picstatus_template_zhenxun/__init__.py"
