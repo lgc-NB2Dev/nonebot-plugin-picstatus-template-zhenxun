@@ -11,8 +11,8 @@ from .config import ConfigModel
 __version__ = "0.1.0"
 __plugin_meta__ = PluginMetadata(
     name="PicStatus Template ZhenXun",
-    description="PicStatus 状态模板，复刻自绪山真寻 Bot",
-    usage="一个状态模板",
+    description="一个衍生自绪山真寻 Bot 的 PicStatus 状态模板",
+    usage="一个衍生自绪山真寻 Bot 的 PicStatus 状态模板",
     type="application",
     homepage="https://github.com/owner/nonebot-plugin-picstatus-template-zhenxun",
     config=ConfigModel,

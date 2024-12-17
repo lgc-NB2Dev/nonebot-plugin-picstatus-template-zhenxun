@@ -10,9 +10,9 @@
   <img src="https://raw.githubusercontent.com/lgc-NB2Dev/readme/main/template/plugin.svg" alt="NoneBotPluginText">
 </p>
 
-# nonebot-plugin-picstatus-template-zhenxun
+# NoneBot-Plugin-PicStatus-Template-ZhenXun
 
-_✨ NoneBot 插件简单描述 ✨_
+_✨ 一个衍生自绪山真寻 Bot 的 PicStatus 状态模板 ✨_
 
 <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
 <a href="https://pdm.fming.dev">
@@ -50,7 +50,16 @@ _✨ NoneBot 插件简单描述 ✨_
 
 ## 📖 介绍
 
-这里是插件的详细介绍部分
+一个衍生自绪山真寻 Bot 的 PicStatus 状态模板
+
+### 效果图
+
+<details>
+  <summary>点击展开</summary>
+
+![example](https://raw.githubusercontent.com/lgc-NB2Dev/readme/main/picstatus/zhenxun/example.jpg)
+
+</details>
 
 ## 💿 安装
 
@@ -115,27 +124,26 @@ plugins = [
 
 </details>
 
-## ⚙️ 配置
+## 🎉 使用
+
+在 nonebot2 项目的 `.env` 文件中添加如下配置
+
+```properties
+PS_TEMPLATE=zhenxun
+PS_BG_PROVIDER=zhenxun_banner
+```
+
+且在加载 PicStatus 插件的同时加载本插件
+
+## ⚙️ 额外配置
 
 在 nonebot2 项目的 `.env` 文件中添加下表中的必填配置
 
-|  配置项  | 必填 | 默认值 |   说明   |
-| :------: | :--: | :----: | :------: |
-| 配置项 1 |  是  |   无   | 配置说明 |
-| 配置项 2 |  否  |   无   | 配置说明 |
-
-## 🎉 使用
-
-### 指令表
-
-|  指令  | 权限 | 需要@ | 范围 |   说明   |
-| :----: | :--: | :---: | :--: | :------: |
-| 指令 1 | 主人 |  否   | 私聊 | 指令说明 |
-| 指令 2 | 群员 |  是   | 群聊 | 指令说明 |
-
-### 效果图
-
-如果有效果图的话
+|             配置项             | 必填 | 默认值 |                说明                 |
+| :----------------------------: | :--: | :----: | :---------------------------------: |
+|  `PS_ZHENXUN_ADDITIONAL_CSS`   |  否  |  `[]`  |   向模板中附加的 CSS 脚本路径列表   |
+| `PS_ZHENXUN_ADDITIONAL_SCRIPT` |  否  |  `[]`  |   向模板中附加的 JS 脚本路径列表    |
+|    `PS_ZHENXUN_PIC_FORMAT`     |  否  | `jpeg` | 输出的图片格式，可选：`jpeg`、`png` |
 
 ## 📞 联系
 

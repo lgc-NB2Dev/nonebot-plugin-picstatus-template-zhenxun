@@ -119,4 +119,4 @@ async def zhenxun(collected: dict[str, Any], bg: "BgData", **_):
         await page.goto(f"{ROUTE_URL}/", wait_until="load")
         elem = await page.wait_for_selector("div.wrapper")
         assert elem
-        return await elem.screenshot(type="jpeg")
+        return await elem.screenshot(type=config.ps_zhenxun_pic_format)
