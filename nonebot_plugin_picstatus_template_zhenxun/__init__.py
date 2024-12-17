@@ -8,7 +8,7 @@ require("nonebot_plugin_htmlrender")
 from . import __main__ as __main__
 from .config import ConfigModel
 
-__version__ = "0.1.0.post1"
+__version__ = "0.1.0.post2"
 __plugin_meta__ = PluginMetadata(
     name="PicStatus Template ZhenXun",
     description="一个衍生自绪山真寻 Bot 的 PicStatus 状态模板",
@@ -20,5 +20,5 @@ __plugin_meta__ = PluginMetadata(
         "nonebot_plugin_picstatus",
         "nonebot_plugin_htmlrender",
     ),
-    extra={"License": "MIT", "Author": "student_2333"},
+    extra={"License": "AGPL-3.0-or-later", "Author": "student_2333"},
 )
