@@ -20,5 +20,5 @@ __plugin_meta__ = PluginMetadata(
         "nonebot_plugin_picstatus",
         "nonebot_plugin_htmlrender",
     ),
-    extra={"License": "AGPL-3.0-or-later", "Author": "student_2333"},
+    extra={"License": "AGPL-3.0-or-later", "Author": "LgCookie"},
 )
