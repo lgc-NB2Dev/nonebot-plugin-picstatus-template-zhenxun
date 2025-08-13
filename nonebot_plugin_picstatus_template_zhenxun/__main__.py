@@ -11,7 +11,6 @@ from nonebot_plugin_htmlrender import get_new_page
 from nonebot_plugin_picstatus.bg_provider import BgData, bg_provider
 from nonebot_plugin_picstatus.collectors import first_time_collector, normal_collector
 from nonebot_plugin_picstatus.collectors.bot import get_bot_status
-from nonebot_plugin_picstatus.debug import is_debug_mode, write_debug_file
 from nonebot_plugin_picstatus.templates import pic_template
 from nonebot_plugin_picstatus.templates.pw_render import (
     ROUTE_URL,
@@ -20,6 +19,7 @@ from nonebot_plugin_picstatus.templates.pw_render import (
     base_router_group,
     register_global_filter_to,
 )
+from nonebot_plugin_picstatus.util import debug
 
 from .config import config
 
@@ -107,8 +107,8 @@ async def zhenxun(collected: dict[str, Any], bg: "BgData", **_):
     collected = {k: v[0] if isinstance(v, deque) else v for k, v in collected.items()}
     html = await template.render_async(d=collected, config=config)
 
-    if is_debug_mode():
-        write_debug_file("{time}.html", html)
+    if debug.enabled:
+        debug.write(html, "{time}.html")
 
     router_group = template_router_group.copy()
     add_root_router(router_group, html)
