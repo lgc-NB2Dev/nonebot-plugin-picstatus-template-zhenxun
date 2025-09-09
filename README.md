@@ -167,4 +167,6 @@ Telegram：[@lgc2333](https://t.me/lgc2333)
 
 ## 📝 更新日志
 
-芝士刚刚发布的插件，还没有更新日志的说 qwq~
+### 0.2.0
+
+- 适配 PicStatus 2.2.0 的 API 变动
