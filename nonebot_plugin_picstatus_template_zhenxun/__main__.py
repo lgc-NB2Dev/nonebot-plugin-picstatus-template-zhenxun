@@ -1,4 +1,3 @@
-from collections import deque
 from datetime import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
@@ -8,7 +7,7 @@ from cookit.pw.router import make_real_path_router
 from nonebot import get_loaded_plugins
 from nonebot.matcher import current_bot
 from nonebot_plugin_htmlrender import get_new_page
-from nonebot_plugin_picstatus.bg_provider import BgData, bg_provider
+from nonebot_plugin_picstatus.bg_provider import BgBytesData, BgFileData, bg_provider
 from nonebot_plugin_picstatus.collectors import first_time_collector, normal_collector
 from nonebot_plugin_picstatus.collectors.bot import get_bot_status
 from nonebot_plugin_picstatus.templates import pic_template
@@ -30,11 +29,12 @@ RES_DIR = Path(__file__).parent / "res"
 
 
 @bg_provider()
-async def zhenxun_banner() -> BgData:
-    return BgData(
-        data=(RES_DIR / "top.jpg").read_bytes(),
-        mime="image/jpeg",
-    )
+async def zhenxun_banner(num: int):
+    for _ in range(num):
+        yield BgFileData(
+            path=RES_DIR / "top.jpg",
+            mime="image/jpeg",
+        )
 
 
 @normal_collector("current_bot")
@@ -101,10 +101,8 @@ async def _(url: "URL", **_):
         "time",
     },
 )
-async def zhenxun(collected: dict[str, Any], bg: "BgData", **_):
+async def zhenxun(collected: dict[str, Any], bg: "BgBytesData", **_):
     template = template_env.get_template("index.html.jinja")
-
-    collected = {k: v[0] if isinstance(v, deque) else v for k, v in collected.items()}
     html = await template.render_async(d=collected, config=config)
 
     if debug.enabled:

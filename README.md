@@ -131,6 +131,7 @@ plugins = [
 ```properties
 PS_TEMPLATE=zhenxun
 PS_BG_PROVIDER=zhenxun_banner
+PS_BG_PRELOAD_COUNT=1
 ```
 
 且在加载 PicStatus 插件的同时加载本插件
